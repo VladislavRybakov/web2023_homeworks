@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
+</head>
+<body>
+    <header>
+        <h1>Обратная связь</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./hw1.html">На главную</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="">
+            <fieldset>
+                <legend>Форма обратной связи</legend>
+                <div>
+                    ФИО
+                    <input type="text" required>
+                </div>
+                <div>
+                    Секретный код
+                    <input type="password" placeholder="(при наличии)">
+                </div>
+                <div>
+                    Возраст
+                    <input type="number" min="10" max="100" required>
+                </div>
+                <div>
+                    Дата и время рождения
+                    <input type="datetime-local">
+                </div>
+                <div>
+                    Пол: 
+                    <label>
+                        М <input type="radio" name="gender">
+                    </label>
+                    
+                    <label>
+                        Ж <input type="radio" name="gender">
+                    </label>
+                </div>
+                <div>
+                    Email
+                    <input type="email" required>
+                </div>
+                <div>
+                    Укажите ваш ежемесячный доход
+                    <select name="money"  required>
+                        <optgroup label="Рубли">
+                            <option value="50"> меньше 50.000 р.</option>
+                            <option value="100">50.000-100.000 р.</option>
+                            <option value="150">100.000-150.000 р.</option>
+                            <option value="200">150.000-200.000 р.</option>
+                            <option value="250"> больше 200.000 р.</option>
+                        </optgroup> 
+                        <optgroup label="Доллары">
+                            <option value="300"> 300$</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    Выберите цвет под Ваше настроение сейчас: <input type="color" id="clr"><br>
+                </div>
+                <div>
+                    На каком этапе вашей жизни, по Вашему мнению, Вы сейчас находитесь?<br>
+                    <input type="range">
+                </div>
+                <br>
+                <div>
+                    Опишите вопрос, по которому Вы обращаетесь: <br>
+                    <textarea name="" id="" cols="50" rows="10" required placeholder="Сообщение (не менее 20 символов)"></textarea>
+                </div>
+                <input type="file"><br>
+                <br>
+                <div>
+                    <label for="check">Согласие на обработку персональных данных</label>
+                    <input type="checkbox" name="check" required>
+                </div>
+                <br>
+                
+                <input type="submit" value="Отправить форму">
+                <input type="reset" value="Сброс">
+                <button><em>Нажми на удачу!</em></button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <a name="contacts"></a><h2>Контакты</h2></a>
+        <p>
+            Тел. +7(910)097-01-98
+          </p>
+          <p>
+            verybakov@edu.hse.ru
+          </p>
+          <address>
+            <p>
+              Москва, Таллинская 34
+            </p>
+          </address>
+    </footer>
+</body>
+</html>
